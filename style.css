@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(77, 9, 77);
+    height: 90px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.encabezadoPrincipal{
+    margin-top: 30px;
+    color: white;
+}
+.listaNav{
+    width: 80%;
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+}
+.boton{
+    margin: 25px;
+    list-style: none;
+}
+.encabezadoPrincipal a{
+    text-decoration: none;
+    color: rgb(216, 182, 216);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.encabezadoPrincipal a:hover{
+    color: rgb(230, 210, 230);
+}
+.boton a{
+    background-color: rgb(216, 182, 216);
+    text-decoration: none;
+    padding-top: 8px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boton a:hover{
+    background-color: rgb(190, 145, 190);
+}
+h2{
+    margin-left: 55%;
+    margin-top: 50px;
+    color: rgb(77, 9, 77);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    text-shadow: 3px 3px 4px rgba(41, 38, 40, 0.5);
+}
+.fotoPerfil{
+    border: 4px rgb(168, 126, 168) inset;
+    
+    border-radius: 200px;
+}
+.contenido{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.contenedorParrafos{
+    background-color: rgb(194, 185, 194);
+    border-radius: 10px;
+    width: 70%;
+    padding: 25px;
+    text-align:justify;
+    line-height: 35px;
+    word-spacing: 1px;
+    vertical-align: bottom;
+    box-shadow: 5px 5px 5px 5px rgb(72, 72, 72);
+}
+.parrafoDestacado{
+    font-size: 19px;
+    font-weight: bolder;
+    color: rgb(59, 39, 59);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contenedorParrafos li{
+    padding-left: 30px;
+    list-style-position: inside;
+}
+.contenedorParrafos p a:hover{
+    color: rgb(106, 105, 105);
+}
+.logos{
+    margin-top: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 180px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+}
