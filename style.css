@@ -47,7 +47,7 @@ a{
     height: 40px;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 20px 0 20px 0;
     font-size: 18px;
     font-weight: 600;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -65,15 +65,19 @@ h2{
 }
 .fotoPerfil{
     border: 4px rgb(168, 126, 168) inset;
-    
     border-radius: 200px;
+}
+.fotoPerfil:hover{
+    transform: scale(1.1);
+    border: 4px rgb(168, 126, 168) outset;
+    transition: all 1.3s;
 }
 .contenido{
     display: flex;
     margin-top: 30px;
     justify-content: space-around;
 }
-.contenedorParrafos{
+.contenedorDescripcion{
     background-color: rgb(194, 185, 194);
     border-radius: 10px;
     width: 70%;
@@ -83,6 +87,28 @@ h2{
     word-spacing: 1px;
     vertical-align: bottom;
     box-shadow: 5px 5px 5px 5px rgb(72, 72, 72);
+    display: flex;
+}
+.img-estudio{
+    width: 420px;
+    height: 280px;
+    border-radius: 5px;
+}
+.img-experiencia{
+    width: 390px;
+    height: 250px;
+    border-radius: 8px;
+}
+.img-competencias{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 260px;
+}
+.texto-alineado{
+    max-width: 70%;
+    margin-right: 25px;
 }
 .parrafoDestacado{
     font-size: 19px;
@@ -97,6 +123,16 @@ h2{
 .contenedorParrafos p a:hover{
     color: rgb(106, 105, 105);
 }
+.tecnologias{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 39, 59);
+    margin-top: 50px;
+    margin-left: 46%;
+    border-bottom: 2px rgb(145, 109, 145) solid;
+}
 .logos{
     margin-top: 100px;
     padding: 15px;
@@ -106,4 +142,27 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     height: 100%;
+    margin-bottom: 50px;
+}
+footer{
+    height: 50px;
+    background-color: rgb(77, 9, 77);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+footer img{
+    color: white;
+}
+.iconos-footer li{
+    list-style: none;
+}
+.iconos-footer{
+    display: flex;
+    margin-top: 10px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
