@@ -75,6 +75,8 @@ h2{
 .fotoPerfil{
     border: 4px rgb(168, 126, 168) inset;
     border-radius: 200px;
+    width: 300px;
+    height: 300px;
 }
 .fotoPerfil:hover{
     transform: scale(1.1);
