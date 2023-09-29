@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    position: relative;
+}
 header{
     background-color: rgb(77, 9, 77);
     height: 90px;
+    position: relative;
+}
+#menu, label{
+    display: none;
 }
 .navBar{
     display: flex;
@@ -54,6 +60,9 @@ a{
 }
 .boton a:hover{
     background-color: rgb(190, 145, 190);
+}
+main{
+    position: relative;
 }
 h2{
     margin-left: 55%;
@@ -165,4 +174,118 @@ footer img{
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (max-width:600px) {
+    header{
+        height: 70px;
+    }
+    .navBar{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    input:checked ~ li{
+        display: block;
+    }
+    input:checked ~ label{
+        background-color: rgb(77, 9, 77);
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+    }
+    label:hover{
+        background-color: gray;
+    }
+    label li a{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .encabezadoPrincipal{
+        margin-top: 25px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .boton{
+        margin: 0;
+        display: none;
+    }
+    label{
+        box-sizing: border-box;
+        display: block;
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        color: white;
+        margin-top: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+    .listaNav{
+        display: none;
+    }
+    main{
+        position: relative;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    h2{
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .fotoPerfil{
+        width: 250px;
+        height: 250px;
+    }
+    .contenedorDescripcion{
+        display: flex;
+        flex-direction: column;
+        line-height: 28px;
+        width: 80%;
+        word-spacing: 0px;
+        gap: 10px;
+    }
+    .texto-alineado{
+        max-width: fit-content;
+        word-spacing: 0;
+    }
+    .img-experiencia{
+        width: 370px;
+        height: 230px;
+        margin-left: 30px;
+    }
+    .img-estudio{
+        width: 380px;
+        height: 240px;
+        margin-left: 25px;
+    }
+    .tecnologias{
+        margin-top: 10px;
+        margin-left: 40%;
+    }
+    .logos{
+        margin-top: 80px;
+        padding: 0px;
+        gap: 100px;
+        margin-right: 8px;
+        justify-content: center;
+    }
+    .img-competencias{
+        width: 380px;
+        height: 230px;
+        margin-left: 25px;
+    }
+    
 }
