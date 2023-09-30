@@ -24,6 +24,7 @@ header{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 .encabezadoPrincipal{
     margin-top: 30px;
@@ -38,11 +39,13 @@ a{
 .boton{
     margin: 25px;
     list-style: none;
+    cursor: pointer;
 }
 .encabezadoPrincipal a{
     text-decoration: none;
     color: rgb(216, 182, 216);
     font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 .encabezadoPrincipal a:hover{
     color: rgb(230, 210, 230);
@@ -202,21 +205,27 @@ footer img{
     .menuDisplay{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:space-around;
         align-items: center;
-        margin-left: 0px;
+        width: 100%;
+        height: 42vh;
+        background-color: rgb(77, 9, 77);
+        z-index: 105;
     }
-    
     .menuDisplay a{
         color: white;
         text-decoration: none;
-
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 20%;
+        margin-top: 40%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500 ;
     }
-
     .menuDisplay{
         display: none;
     }
-
     #menu:checked + label + .menuDisplay {
         display: block;
     }
@@ -229,7 +238,7 @@ footer img{
     input:checked ~ label{
         background-color: rgb(77, 9, 77);
         height: 40vh;
-        width: 100vw;
+        width: 90vw;
         z-index: 100;
     }
     .menuDisplay li a{
