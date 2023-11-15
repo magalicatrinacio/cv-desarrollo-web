@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV Magali Catrinacio">
+    <meta name="description" content="CV Magali Catrinacio - Trivia">
     <meta name="author" content="Magali Catrinacio">
-    <meta property="og:title" content="CV Magali Catrinacio">
-    <meta property="og:description" content="Datos Personales">
-    <title>CV Magali Catrinacio</title>
+    <title>CV Magali Catrinacio | Trivia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/cv-logo.jpg" type="image/x-icon">
 </head>
@@ -34,22 +31,11 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Datos Personales</h2>
-        <div class="contenido">
-            <img src="img/foto-magali.jpg" alt="Foto Magali" class="fotoPerfil" width="300px" height="300px">
-            <div class="contenedorDescripcion">
-                <div class="contenedorParrafos">
-                    <p class="parrafoDestacado">Sobre mí</p>
-                    <p>Mi nombre es Magali Catrinacio, tengo 20 años y actualmente soy estudiante de Licenciatura en Gestión de Tecnología de la Información en la Universidad Argentina de la Empresa (UADE). 
-                    Mi experiencia laboral me ha proporcionado habilidades en atención al cliente y 
-                    gestión de transacciones. Sin embargo, lo que realmente me emociona es la posibilidad de fusionar mi pasión por 
-                    la tecnología con mis conocimientos en análisis de sistemas.
-                    Poseo habilidades en desarrollo web, incluyendo Python y JavaScript, lo que me permite abordar desafíos técnicos 
-                    de manera efectiva. Mi objetivo es aplicar estas habilidades para optimizar procesos y encontrar soluciones 
-                    innovadoras en el ámbito de análisis de sistemas.</p>
-                </div>
-            </div>
+    <main class="mainTrivia">
+        <div class="containerTrivia">
+            <div id="pregunta-container"></div>
+            <button id="siguiente-btn">Siguiente</button>
+            <button id="jugar-btn"><a href="trivia.html">Jugar de nuevo</a></button>
         </div>
     </main>
     <footer>
@@ -60,5 +46,6 @@
             <li><a href="https://github.com/magalicatrinacio/cv-desarrollo-web" target="_blank"><img src="img/github-logo.png" alt="logo telefono"></a></li>
         </ul>
     </footer>
+    <script src="trivia.js"></script>
 </body>
 </html>

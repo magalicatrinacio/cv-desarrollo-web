@@ -1,55 +1,65 @@
+/* Estilos globales */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     position: relative;
 }
+
+/* Estilos globales - Header */
 header{
     background-color: rgb(77, 9, 77);
     height: 90px;
     position: relative;
 }
+
 #menu, label{
     display: none;
 }
-.menuDisplay{
-    
-}
+
 .navBar{
     display: flex;
     justify-content: space-around;
 }
+
 a{
     text-decoration: none;
-    color: black;
     cursor: pointer;
+    color: black;
 }
+
 .encabezadoPrincipal{
     margin-top: 30px;
     color: white;
 }
+
 .listaNav{
     width: 80%;
     height: 58px;
     display: flex;
     justify-content: space-around;
 }
+
 .boton{
     margin: 25px;
     list-style: none;
     cursor: pointer;
 }
+
 .encabezadoPrincipal a{
     text-decoration: none;
     color: rgb(216, 182, 216);
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
 }
+
 .encabezadoPrincipal a:hover{
     color: rgb(230, 210, 230);
 }
+
 .boton a{
     background-color: rgb(216, 182, 216);
     text-decoration: none;
@@ -64,12 +74,16 @@ a{
     font-weight: 600;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .boton a:hover{
     background-color: rgb(190, 145, 190);
 }
+
+/* Estilos globales - Main */
 main{
     position: relative;
 }
+
 h2{
     margin-left: 55%;
     margin-top: 50px;
@@ -78,22 +92,26 @@ h2{
     font-weight: 900;
     text-shadow: 3px 3px 4px rgba(41, 38, 40, 0.5);
 }
+
 .fotoPerfil{
     border: 4px rgb(168, 126, 168) inset;
     border-radius: 200px;
     width: 300px;
     height: 300px;
 }
+
 .fotoPerfil:hover{
     transform: scale(1.1);
     border: 4px rgb(168, 126, 168) outset;
     transition: all 1.3s;
 }
+
 .contenido{
     display: flex;
     margin-top: 30px;
     justify-content: space-around;
 }
+
 .contenedorDescripcion{
     background-color: rgb(194, 185, 194);
     border-radius: 10px;
@@ -106,61 +124,24 @@ h2{
     box-shadow: 5px 5px 5px 5px rgb(72, 72, 72);
     display: flex;
 }
-.img-estudio{
-    width: 420px;
-    height: 280px;
-    border-radius: 5px;
-}
-.img-experiencia{
-    width: 390px;
-    height: 250px;
-    border-radius: 8px;
-}
-.img-competencias{
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 260px;
-}
-.texto-alineado{
-    max-width: 70%;
-    margin-right: 25px;
-}
+
 .parrafoDestacado{
     font-size: 19px;
     font-weight: bolder;
     color: rgb(59, 39, 59);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .contenedorParrafos li{
     padding-left: 30px;
     list-style-position: inside;
 }
+
 .contenedorParrafos p a:hover{
     color: rgb(106, 105, 105);
 }
-.tecnologias{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bolder;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(59, 39, 59);
-    margin-top: 50px;
-    margin-left: 46%;
-    border-bottom: 2px rgb(145, 109, 145) solid;
-}
-.logos{
-    margin-top: 100px;
-    padding: 15px;
-    display: flex;
-    justify-content:flex-start;
-    gap: 180px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 100%;
-    margin-bottom: 50px;
-}
+
+/* Footer */
 footer{
     height: 50px;
     background-color: rgb(77, 9, 77);
@@ -183,12 +164,141 @@ footer img{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Estudio */
+.img-estudio{
+    width: 420px;
+    height: 280px;
+    border-radius: 5px;
+}
+
+.tecnologias{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 39, 59);
+    margin-top: 50px;
+    margin-left: 46%;
+    border-bottom: 2px rgb(145, 109, 145) solid;
+}
+
+.logos{
+    margin-top: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 180px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+/* Experiencia */
+.img-experiencia{
+    width: 390px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.texto-alineado{
+    max-width: 70%;
+    margin-right: 25px;
+}
+
+/* Competencia */
+.nube{
+    margin-right: 180px;
+}
+
+/* Trivia */
+.mainTrivia {
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    background-image: url("img/fondo-javascript.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: right;
+}
+
+.containerTrivia{
+    margin-top: 110px;
+    margin-left: 1%;
+    background-color: rgb(230, 212, 230);
+    color: rgb(61, 19, 61);
+    padding: 15px;
+    max-width: 550px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 4px 4px 1px rgb(166, 105, 166);
+}
+
+.pregunta {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    margin: 15px;
+}
+
+.opciones {
+    list-style-type: none;
+    padding-left: 22px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.opciones li {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.opciones input[type="checkbox"] {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#siguiente-btn, #jugar-btn {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: rgb(77, 9, 77);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#siguiente-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#jugar-btn:disabled{
+    display: none;
+}
+
+button a{
+    color: white;
+}
+
+/* Media Queries*/
 @media (min-width:601px){
     .menuDisplay{
         display: none;
     }
 }
 @media (max-width:600px) {
+    /* Header Responsive */
     header{
         height: 70px;
     }
@@ -208,20 +318,26 @@ footer img{
         justify-content:space-around;
         align-items: center;
         width: 100%;
-        height: 42vh;
+        height: 65vh;
         background-color: rgb(77, 9, 77);
         z-index: 105;
+        padding-top: 10%;
     }
     .menuDisplay a{
-        color: white;
+        color: rgb(211, 172, 211);
         text-decoration: none;
         width: 100%;
         height: 30px;
-        font-size: 20px;
-        margin-left: 20%;
-        margin-top: 40%;
+        font-size: 18px;
+        margin-left: 50%;
+        margin-top: 45px;
+        border-bottom: 1px solid rgba(211, 172, 211, 0.742);
+        text-align: center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 500 ;
+        font-weight: 700 ;
+    }
+    .menuDisplay a:hover{
+        color: rgb(235, 221, 235);
     }
     .menuDisplay{
         display: none;
@@ -237,31 +353,33 @@ footer img{
     }
     input:checked ~ label{
         background-color: rgb(77, 9, 77);
-        height: 40vh;
-        width: 90vw;
+        height: 62.3vh;
+        width: 100vw;
+        margin-right: -20px;
         z-index: 100;
     }
     .menuDisplay li a{
         background-color: rgb(77, 9, 77);
         display: flex;
         flex-direction: column;
-        gap: 30px;
     }
     .menuDisplay li{
         text-decoration: none;
         list-style: none;
+        width: 110%;
     }
     .encabezadoPrincipal{
         margin-top: 25px;
         font-size: 18px;
-        width: 100%;
+        width: 150%;
+        z-index: 1;
     }
     .boton{
         margin: 0;
     }
     label{
-        box-sizing: border-box;
-        display: block;
+        display: flex;
+        justify-content: end;
         font-size: 25px;
         width: 30px;
         height: 30px;
@@ -275,6 +393,7 @@ footer img{
     .listaNav{
         display: none;
     }
+    /* Main reponsive */
     main{
         position: relative;
     }
@@ -307,15 +426,17 @@ footer img{
         max-width: fit-content;
         word-spacing: 0;
     }
+    /* Experiencia Responsive */
     .img-experiencia{
-        width: 370px;
+        width: 80%;
         height: 230px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
+    /* Estudio Responsive */
     .img-estudio{
-        width: 380px;
+        width: 80%;
         height: 240px;
-        margin-left: 25px;
+        margin-left: 40px;
     }
     .tecnologias{
         margin-top: 10px;
@@ -328,9 +449,45 @@ footer img{
         margin-right: 8px;
         justify-content: center;
     }
-    .img-competencias{
-        width: 380px;
-        height: 230px;
-        margin-left: 25px;
+    /* Competencia Responsive */
+    .nube{
+        width:550px ;
+        height: 330px;
+        margin-left:30%;
+    }
+    /* Trivia Responsive */
+    .mainTrivia {
+        background-repeat: repeat-y;
+        height: 95vh;
+    }
+    .containerTrivia{
+        margin-top: 25px;
+        padding: 10px;
+    }
+    .pregunta{
+        margin: 10px;
+        font-size: 17px;
+    }
+    .opciones {
+        padding-left: 22px;
+        padding-top: 2px;
+        padding-bottom: 8px;
+    }
+    
+    .opciones li {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 17px;
+    }
+
+    .opciones input[type="checkbox"] {
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    #siguiente-btn, #jugar-btn {
+        margin-top: 12px;
+        font-size: 15px;
     }
 }
