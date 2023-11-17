@@ -64,7 +64,7 @@ function mostrarPregunta() {
     for (var i = 0; i < preguntaActual.opciones.length; i++) {
         var opcionItem = document.createElement("li");
         var opcionCheckbox = document.createElement("input");
-        opcionCheckbox.type = "checkbox";
+        opcionCheckbox.type = "radio";
         opcionCheckbox.name = "opcion";
         opcionCheckbox.value = i;
         opcionItem.textContent = preguntaActual.opciones[i];
@@ -103,7 +103,11 @@ function siguientePregunta() {
         mostrarPregunta();
     } else {
     // Mostrar resultados finales
-        alert("Has acertado " + respuestasCorrectas + " de " + preguntas.length + " respuestas.");
+        Swal.fire({
+            title: "Resultados",
+            text: "Has acertado " + respuestasCorrectas + " de " + preguntas.length + " respuestas.",
+            icon: "question"
+        })
         document.getElementById("siguiente-btn").disabled = true;
         document.getElementById("jugar-btn").disabled = false;
     }

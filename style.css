@@ -225,7 +225,6 @@ footer img{
 
 .containerTrivia{
     margin-top: 110px;
-    margin-left: 1%;
     background-color: rgb(230, 212, 230);
     color: rgb(61, 19, 61);
     padding: 15px;
@@ -259,7 +258,7 @@ footer img{
     font-weight: 600;
 }
 
-.opciones input[type="checkbox"] {
+.opciones input[type="radio"] {
     margin-left: 10px;
     width: 15px;
     height: 15px;
@@ -451,7 +450,7 @@ button a{
     }
     /* Competencia Responsive */
     .nube{
-        width:550px ;
+        width:80% ;
         height: 330px;
         margin-left:30%;
     }
@@ -480,7 +479,7 @@ button a{
         font-size: 17px;
     }
 
-    .opciones input[type="checkbox"] {
+    .opciones input[type="radio"] {
         margin-left: 10px;
         width: 15px;
         height: 15px;
