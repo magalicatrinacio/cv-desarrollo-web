@@ -1,6 +1,6 @@
 
 // Array de preguntas y respuestas
-var preguntas = [
+let preguntas = [
     {
         pregunta: "¿Cuál de las siguientes tecnologías se utiliza para manipular el contenido y el estilo de una página web de manera dinámica en el navegador?",
         opciones: ["MySQL", "React.js", "CSS", "HTML"],
@@ -34,36 +34,34 @@ var preguntas = [
 ];
 
 // Variables globales
-var indicePregunta = 0;
-var respuestasCorrectas = 0;
+let indicePregunta = 0;
+let respuestasCorrectas = 0;
 
 document.getElementById("jugar-btn").disabled = true;
 
 // Función para mostrar la pregunta actual
 function mostrarPregunta() {
-    var preguntaActual = preguntas[indicePregunta];
-    var preguntaContainer = document.getElementById("pregunta-container");
+    let preguntaActual = preguntas[indicePregunta];
+    let preguntaContainer = document.getElementById("pregunta-container");
 
     // Limpiar el contenedor de preguntas
     preguntaContainer.innerHTML = "";
 
-    // Crear elementos HTML para mostrar la pregunta y opciones
-
     // creo el elemento div, le doy la clase pregunta y lo pongo dentro de preguntaContainer
-    var preguntaElement = document.createElement("div");
+    let preguntaElement = document.createElement("div");
     preguntaElement.classList.add("pregunta");
     preguntaElement.textContent = preguntaActual.pregunta;
     preguntaContainer.appendChild(preguntaElement);
 
     // creo el elemento ul, le doy la clase opciones y lo pongo dentro de preguntaContainer
-    var opcionesList = document.createElement("ul");
+    let opcionesList = document.createElement("ul");
     opcionesList.classList.add("opciones");
     preguntaContainer.appendChild(opcionesList);
 
     // por cada opcion de la pregunta creo un elemento li y un input y los pongo dentro de ul
-    for (var i = 0; i < preguntaActual.opciones.length; i++) {
-        var opcionItem = document.createElement("li");
-        var opcionCheckbox = document.createElement("input");
+    for (let i = 0; i < preguntaActual.opciones.length; i++) {
+        let opcionItem = document.createElement("li");
+        let opcionCheckbox = document.createElement("input");
         opcionCheckbox.type = "radio";
         opcionCheckbox.name = "opcion";
         opcionCheckbox.value = i;
@@ -75,11 +73,11 @@ function mostrarPregunta() {
 
 // Función para comprobar respuestas
 function comprobarRespuesta() {
-    var checkboxes = document.getElementsByName("opcion");
-    var preguntaActual = preguntas[indicePregunta];
-    var respuestaUsuario = null;
+    let checkboxes = document.getElementsByName("opcion");
+    let preguntaActual = preguntas[indicePregunta];
+    let respuestaUsuario = null;
 
-    for (var i = 0; i < checkboxes.length; i++) {
+    for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             respuestaUsuario = parseInt(checkboxes[i].value);
             break;
